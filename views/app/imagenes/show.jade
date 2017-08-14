@@ -1,0 +1,10 @@
+extends ../../layout.jade
+block contenido
+	div(class="img-container")
+		h1= imagen.title +"  "+"propiedad de"+"  "+ user.email
+		img(src="../../../public/imagenes/#{imagen._id}.#{imagen.extension}", class="main-img")
+		if(typeof imagen.creator != "undefined")
+			p Propiedad de #{user.email}
+
+
+
